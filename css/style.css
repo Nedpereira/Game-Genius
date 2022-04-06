@@ -1,7 +1,7 @@
 body{
 
     margin: 0;
-    background-color:rgb(77, 78, 78);
+    background-color:rgb(251, 252, 252);
 
 }
 
@@ -23,8 +23,8 @@ body{
     display: grid;
     grid-template-areas: 'verde vermelho'
     'amarelo azul';
-    grid-gap: 15px;
-    border: 15px solid #040404;
+    grid-gap: 20px;
+    border: 20px solid #040404;
     background-color: #0a0a0a;
     border-radius: 100%;
     width: 600px;
@@ -42,7 +42,7 @@ body{
 }
 
 .azul:hover{
-    border-bottom-right-radius: 120%; 
+    transform: scale(0.9);
 }
 
 .vermelho{
@@ -53,6 +53,10 @@ body{
     cursor: pointer;
 }
 
+.vermelho:hover{
+    transform: scale(0.9);
+}
+
 .amarelo{
     grid-area: amarelo;
     background-color: yellow;
@@ -60,12 +64,20 @@ body{
     cursor: pointer;
 }
 
+.amarelo:hover{
+    transform: scale(0.9);
+}
+
 .verde{
 
     grid-area: verde;
-    Background-color: green;
+    Background-color: rgb(10, 181, 10);
     border-top-left-radius: 100%;
     cursor: pointer;
+}
+
+.verde:hover{
+    transform: scale(0.9);
 }
 
 .selection{

@@ -1,6 +1,7 @@
 let order = [];
 let clickOrder = [];
 let pontos = 0;
+let contador = 0;
 
 
 // 0 - azul
@@ -25,6 +26,8 @@ let embaralhar = () =>  {
         let elementColor = createColorElement(order[i]);
         lightColor(elementColor, Number(i) + 1);
 
+
+        
      }
 
 }
@@ -121,3 +124,4 @@ amarelo.onclick =() => click(2);
 verde.onclick =() => click(3);
 
 play();
+
